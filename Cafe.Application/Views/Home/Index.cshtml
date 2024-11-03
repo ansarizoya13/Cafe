@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .txtSearch
+    {
+        width:100%;
+        background-color:transparent;
+        border:none;
+        outline:0;
+        border-bottom:1px solid white;
+        color:white;
+    }
+
+    .btnCart
+    {
+        background-color:black;
+        color:white;
+        width:200px;
+    }
+
+</style>
+
+<div class="container my-4">
+    <input type="text" class="txtSearch" placeholder="Search foods..."/>
+    <div class="row my-3">
+        <div class="col my-2">
+            <div class="card" style="width:15rem;">
+                <img src="https://www.theseasonedmom.com/wp-content/uploads/2024/08/crockpot-spaghetti-8.jpg"
+                     alt="Sphagetti" height="150" />
+                <div class="card-body text-dark">
+                    <h4 class="text-dark">Sphagetti</h4>
+                    <span class="badge bg-danger mb-1">Non-Veg</span>
+                    <p class="card-text mb-2">Italian tangy Noodles with Meatballs...</p>
+                    <h5>$25.15</h5>
+                    <button class="btnCart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
