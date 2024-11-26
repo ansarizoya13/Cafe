@@ -179,6 +179,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Partials\Header.cshtml" />
     <Content Include="Views\Shared\Partials\Footer.cshtml" />
+    <Content Include="Views\Home\CartScreen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

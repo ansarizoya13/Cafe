@@ -20,6 +20,11 @@ namespace Cafe.Application.Controllers
             return View();
         }
 
+        public ActionResult CartScreen()
+        {
+            return View();
+        }
+
 
         #region Helper Methods
         public List<FoodModel> GetFoods()

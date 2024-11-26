@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "CartScreen";
+}
+
+<style>
+    .txtSearch {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: 0;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+</style>
+
+<div class="container my-4">
+    <div class="row mt-4">
+        <div class="col-6">
+            <h3>CART</h3>
+            <div class="border rounded">
+                @for (int i = 0; i < 5; i++)
+                {
+                    <div class="row mx-3 py-3 border-bottom">
+                        <div class="d-flex align-items-center justify-content-between w-100">
+                            <div class="d-flex align-items-center">
+                                <div class="me-3">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6FTv-lJYSJ5f24cs_y72ttvTBS2vBOZ5rkw&s"
+                                         alt="Sphagetti" height="90" class="rounded">
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">Sphagetti</h4>
+                                    <h5 class="mb-0 text-secondary">$12.45 x 2</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="mb-0 text-secondary">$45.32</h5>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-6">
+            <h3>SUMMARY</h3>
+            <div class="mb-3 px-3 py-2 border rounded">
+                <div class="d-flex mt-2 border-bottom pb-1">
+                    <h5 class="flex-grow-1">Total Quantity</h5>
+                    <h5 class="text-secondary">12</h5>
+                </div>
+                <div class="d-flex mt-3">
+                    <h5 class="flex-grow-1">Sub Total Price</h5>
+                    <h5 class="text-secondary">$210</h5>
+                </div>
+                <div class="d-flex mt-3 border-bottom pb-1">
+                    <h5 class="flex-grow-1">Shipping Charge</h5>
+                    <h5 class="text-secondary">$0</h5>
+                </div>
+                <div class="d-flex mt-3 pb-1">
+                    <h5 class="flex-grow-1">Total Price</h5>
+                    <h5 class="text-secondary">$210</h5>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3>SHIPPING INFORMATION</h3>
+                <form class="py-2 px-3 border rounded">
+                    <div class="form-group mb-4">
+                        <label for="name">Name</label>
+                        <input type="text" class="txtSearch" placeholder="Enter name..." />
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="name">Email</label>
+                        <input type="email" class="txtSearch" placeholder="Enter email..." />
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="name">Contact number</label>
+                        <input type="number" class="txtSearch" placeholder="Enter contact number..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Address</label>
+                        <input type="text" class="txtSearch" placeholder="Enter address" />
+                    </div>
+                    <div class="form-group text-center mt-4">
+                        <button class="btn btn-success w-100">Pay $250</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
