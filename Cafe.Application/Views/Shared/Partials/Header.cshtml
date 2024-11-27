@@ -1,15 +1,15 @@
 ﻿<nav class="navbar navbar-light">
     <div class="container">
-        <a class="navbar-brand">
+        <a class="navbar-brand" href="@Url.Action("Index", "Home")">
             <h1 class="text-light">
                 <i class="fa-solid fa-burger"></i>
                 Foodie
             </h1>
         </a>
         <div class="d-flex">
-            <a href="" class="link">
+            <a class="link" href="@Url.Action("CartScreen", "Home")">
                 <i class="fas fa-shopping-cart"></i>
-                5
+                <span id="cart-counter">0</span>
             </a>
         </div>
     </div>
@@ -18,10 +18,25 @@
 <style>
     .link {
         color: white;
-        text-decoration : none;
+        text-decoration: none;
     }
-    .link:hover
-    {
-        color : white;
+
+        .link:hover {
+            color: white;
+        }
+
+    .txtSearch {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: 0;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    .btnCart {
+        background-color: black;
+        color: white;
+        width: 200px;
     }
 </style>

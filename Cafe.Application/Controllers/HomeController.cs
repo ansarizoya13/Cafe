@@ -25,6 +25,22 @@ namespace Cafe.Application.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Payment(string name, string email, string contact, string address, string totalPrice)
+        {
+            var details = new
+            {
+                name,
+                email,
+                contact,
+                address,
+            };
+
+            ViewBag.StripePublishKey = ConfigurationManager.AppSettings["StripePublishableKey"].ToString();
+            ViewBag.totalPrice = Convert.ToDecimal(totalPrice);
+
+            return View();
+        }
 
         #region Helper Methods
         public List<FoodModel> GetFoods()

@@ -13,5 +13,7 @@ values
 	('Chicken Biryani','Flavored basmati rice cooked with marinated chicken and spices.',12.50,2,'https://ministryofcurry.com/wp-content/uploads/2024/06/chicken-biryani-5.jpg'),
 	('Veg Biryani','Aromatic basmati rice cooked with mixed vegetables and spices.',18.99,1,'https://www.indianveggiedelight.com/wp-content/uploads/2020/04/veg-biryani-instant-pot.jpg'),
 	('Chicken Shawarma','Spiced grilled chicken wrapped in flatbread with garlic sauce.',15.60,2,'https://hips.hearstapps.com/hmg-prod/images/190130-chicken-shwarma-horizontal-1549421250.png?crop=1xw:0.843328335832084xh;center,top&resize=1200:*'),
-	('Masala Dosa','Crispy fermented rice pancake filled with spicy potato stuffing.',11.20,1,'https://palatesdesire.com/wp-content/uploads/2022/09/Mysore-masala-dosa-recipe@palates-desire.jpg')
+	('Masala Dosa','Crispy fermented rice pancake filled with spicy potato stuffing.',11.20,1,'https://palatesdesire.com/wp-content/uploads/2022/09/Mysore-masala-dosa-recipe@palates-desire.jpg'),
+	('Shaami Kebab','Soft, spiced patties made from minced meat and lentils','15.25','2','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCqlXQqjzZuOyTIVd7aLYhmIdyBeDMJU_CQ&s')
+
 

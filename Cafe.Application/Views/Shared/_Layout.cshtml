@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <style>
         body {
             background-color: black;
@@ -14,14 +15,18 @@
         }
     </style>
 </head>
-<body>
-    
+<body onload="updateCartQtyText(); cartScreenLoad();">
+
     @Html.Partial("Partials/Header")
 
     @RenderBody()
 
     @Html.Partial("Partials/Footer")
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="~/Scripts/client.js"></script>
 </body>
 </html>

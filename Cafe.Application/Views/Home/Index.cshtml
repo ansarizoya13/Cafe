@@ -2,28 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 
-<style>
-    .txtSearch
-    {
-        width:100%;
-        background-color:transparent;
-        border:none;
-        outline:0;
-        border-bottom:1px solid white;
-        color:white;
-    }
-
-    .btnCart
-    {
-        background-color:black;
-        color:white;
-        width:200px;
-    }
-
-</style>
 
 <div class="container my-4">
-    @*<input type="text" class="txtSearch" placeholder="Search foods..."/>*@
     <div class="row my-3">
         @foreach (var food in ViewBag.foods)
         {
@@ -32,7 +12,7 @@
                     <img src=@food.FoodImg alt=@food.FoodName height="150" />
                     <div class="card-body text-dark">
                         <h4 class="text-dark">@food.FoodName</h4>
-                        @if(Convert.ToInt32(food.CategoryType) == 1)
+                        @if (Convert.ToInt32(food.CategoryType) == 1)
                         {
                             <span class="badge bg-success mb-1">Veg</span>
                         }
@@ -42,7 +22,10 @@
                         }
                         <p class="card-text mb-2">@food.FoodDescription...</p>
                         <h5>$@food.FoodPrice</h5>
-                        <button class="btnCart">Add to Cart</button>
+                        <button class="btnCart font-weight-bold"
+                                onclick="btnAddToCart(@food.FoodID, '@food.FoodName', '@food.FoodImg', @food.FoodPrice)">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
@@ -50,6 +33,3 @@
 
     </div>
 </div>
-
-
-
